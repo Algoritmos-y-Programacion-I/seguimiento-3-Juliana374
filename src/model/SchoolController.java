@@ -1,29 +1,37 @@
 package model;
 
 public class SchoolController {
+        
+        private String name;
+        private int hourSpendSupport;
 
-    /*
-     * ATENCION !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-     * Agregue los atributos (relaciones) necesarios para satisfacer los
-     * requerimientos.
-     */
-
-    public SchoolController() {
-
+    public SchoolController(String name, int hourSpendSupport) {
+        this.name = name;
+        this.hourSpendSupport = hourSpendSupport;
     }
 
-    /*
-     * ATENCION !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-     * Los siguientes metodos estan incompletos.
-     * Añada los metodos que considere hagan falta para satisfacer los
-     * requerimientos.
-     * Para cada metodo:
-     * Agregue los parametros y retorno que sean pertinentes.
-     * Agregue la logica necesaria (instrucciones) para satisfacer los
-     * requerimientos.
-     */
-    public void agregarComputador() {
+    public String getName() {
+        return name;
+    }
+    public void setName(String name) {
+        this.name = name;
+    }
 
+    public int getHourSpendSupport() {
+        return hourSpendSupport;
+    }
+
+    public void setHourSpendSupport(int hourSpendSupport) {
+        this.hourSpendSupport = hourSpendSupport;
+    }
+
+
+    public SchoolController() {
+    
+    }
+
+    public void agregarComputador() {
+     
     }
 
     public void agregarIncidenteEnComputador() {
